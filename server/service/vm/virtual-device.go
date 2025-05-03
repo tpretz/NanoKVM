@@ -32,15 +32,15 @@ var (
 	}
 
 	mountDiskCommands = []string{
-		"touch /boot/usb.disk0",
+		"touch /boot/usb.disk1",
 		"/etc/init.d/S03usbdev stop",
 		"/etc/init.d/S03usbdev start",
 	}
 
 	unmountDiskCommands = []string{
 		"/etc/init.d/S03usbdev stop",
-		"rm -rf /sys/kernel/config/usb_gadget/g0/configs/c.1/mass_storage.disk0",
-		"rm /boot/usb.disk0",
+		"rm -rf /sys/kernel/config/usb_gadget/g0/configs/c.1/mass_storage.disk1",
+		"rm /boot/usb.disk1",
 		"/etc/init.d/S03usbdev start",
 	}
 )
