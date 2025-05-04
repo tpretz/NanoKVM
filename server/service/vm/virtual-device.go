@@ -14,7 +14,7 @@ import (
 
 const (
 	virtualNetwork = "/boot/usb.rndis0"
-	virtualDisk    = "/boot/usb.disk0"
+	virtualDisk    = "/boot/usb.disk1"
 )
 
 var (
